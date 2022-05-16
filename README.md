@@ -89,7 +89,8 @@ What is our “y” or target variable that we are predicting (classes that we a
 * Class 9 (1873 images): Edge-on Galaxies with Bulge
  
  
-
+# View Project 
+### Review above the galaxy10 (1).ipynb
 
 ![galaxypurple](https://user-images.githubusercontent.com/104231685/168538698-6fa71da5-cfa7-434d-8a2c-9002698d56eb.jpg)
 
