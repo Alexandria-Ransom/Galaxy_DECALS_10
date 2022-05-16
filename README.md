@@ -117,3 +117,12 @@ User's eye
 user clicks our button -users see's image that was selected
 user see's the prediction that the model made (class of image)
 Randomly select 50 image where 5 belong to each of the 10 classes : this is through sampling
+
+# Results: The project's final score received 42 %. Why did we get that score, what can we do to improve the score ? 
+* Orginally , we made the images smaller in the pre-processing stage. We could have used bigger images 
+* Another reason, we could actually try gray scaling. The color difference can be an upside factor when identifying shapes and patterns 
+* Adding ensemble modeling with traditional classification models (through boosting)
+* Introduce transfer learning: This is where we introduce pre-trained models as the starting point that allows rapid progress or improved performance. 
+* Increase our epochs in our basic neural network from 20 to intervals of +25, +100. (within constraints of budget in project planning questions)
+* Switch our optimizers from Adam to Gradient Descent, add sigmoid as a non- linear function(adds non-linearity to our function)
+*  In the CNN, increase filter size from 32 to 64. Every layer of filters is there to capture patterns, edges, corners, dots, etc.
