@@ -93,6 +93,56 @@ What is our “y” or target variable that we are predicting (classes that we a
 
 ![galaxypurple](https://user-images.githubusercontent.com/104231685/168538698-6fa71da5-cfa7-434d-8a2c-9002698d56eb.jpg)
 
+# Supervised Models & Total Models Used
+### CNN
+Convolutional neural networks are distinguished from other neural networks by their superior performance with image, speech, or audio signal inputs. They have three main types of layers, which are:
+
+* Convolutional layer
+* Pooling layer
+* Fully-connected (FC) layer
+
+The convolutional layer is the first layer of a convolutional network. While convolutional layers can be followed by additional convolutional layers or pooling layers, the fully-connected layer is the final layer. With each layer, the CNN increases in its complexity, identifying greater portions of the image. Earlier layers focus on simple features, such as colors and edges. As the image data progresses through the layers of the CNN, it starts to recognize larger elements or shapes of the object until it finally identifies the intended object - (https://www.ibm.com/cloud/learn/convolutional-neural-networks).
+### Feed-Forward Network : Basic Neural Network 
+"A feedforward neural network is a type of artificial neural network in which nodes’ connections do not form a loop.
+
+Often referred to as a multi-layered network of neurons, feedforward neural networks are so named because all information flows in a forward manner only.
+
+The data enters the input nodes, travels through the hidden layers, and eventually exits the output nodes. The network is devoid of links that would allow the information exiting the output node to be sent back into the network.
+
+The purpose of feedforward neural networks is to approximate functions.
+The following are the components of a feedforward neural network:
+
+Layer of input
+
+It contains the neurons that receive input. The data is subsequently passed on to the next tier. The input layer’s total number of neurons is equal to the number of variables in the dataset.
+
+Hidden layer
+
+This is the intermediate layer, which is concealed between the input and output layers. This layer has a large number of neurons that perform alterations on the inputs. They then communicate with the output layer.
+
+Output layer
+
+It is the last layer and is depending on the model’s construction. Additionally, the output layer is the expected feature, as you are aware of the desired outcome.
+
+Neurons weights
+
+Weights are used to describe the strength of a connection between neurons. The range of a weight’s value is from 0 to 1." (https://www.analyticsvidhya.com/blog/2022/01/feedforward-neural-network-its-layers-functions-and-importance/)
+
+### Baseline 
+A baseline model is essentially a simple model that acts as a reference in a machine learning project. - (https://towardsdatascience.com/baseline-models-your-guide-for-model-building-1ec3aa244b8d#:~:text=A%20baseline%20model%20is%20essentially,a%20necessity%20for%20many%20reasons.) 
+
+### KNeighbors Classifier
+Unlike classification using artificial neural networks, k-nearest neighbors classification is easy to understand and simple to implement. It's ideal in situations where the data points are well defined or non-linear.
+
+In essence, KNN performs a voting mechanism to determine the class of an unseen observation. This means that the class with the majority vote will become the class of the data point in question.
+
+If the value of K is equal to one, then we'll use only the nearest neighbor to determine the class of a data point. If the value of K is equal to ten, then we'll use the ten nearest neighbors, and so on.(https://learn.g2.com/k-nearest-neighbor)
+
+### DecisionTreeClassifier
+### RandomForestClassifier
+### Logistic Regression 
+
+
 
 # Galaxy Web Application Button
 As a result, we created an interactive web application button that displays the images and shows below our predicted class of image and the actual class. 
