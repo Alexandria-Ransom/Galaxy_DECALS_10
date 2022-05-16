@@ -35,7 +35,8 @@ There is no guarantee on the accuracy of the labels. Moreover, Galaxy10 is not a
 # Project Planning Questions 
 Project Planning Questions: Galaxy Image Classification Project
 
-What value does this project add? How will the model get used? What data do we have currently?  
+* What value does this project add? How will the model get used? *  What data do we have currently?
+  
   The value that this project will add consists of supporting AI’s advancement in space exploration. These images will be of value to the space industry in educational textbooks for students. This project will help students distinguish variations between galaxies. It will help educate the public on how and what galaxies look like and the architecture in which they are formed.  Additionally, it can help support astronauts in their research when they conduct missions in outer space.  This would also be of value to telescope observatories globally to help advance their research  in their laboratories. Observatories examine and observe celestial objects in the sky. These models can help assist with images to identify those celestial objects.  
  
 The model will be used by professionals primarily in the space industry and The data we currently have is an extracted Galaxy10_DECals.h5 dataset that contains 17736 256x256 pixels colored galaxy images separated in a total of 10 classes. The datasets have images with a shape of (17736, 256, 256, 3). The Galaxy 10 DECals images come from “DESI Legacy Imaging Surveys which includes the Beijing- Arizona Sky Survey(BASS), the DECam Legacy Survey(DECaLS) and the Mayall z- band Legacy Survey and the labels come from Galaxy Zoo”, https://github.com/henrysky/Galaxy10.
@@ -76,16 +77,16 @@ We will be using a simple laptop computer and building the code in the project i
  
 What is our “y” or target variable that we are predicting (classes that we are separating our images into)? 
  
-Class 0 (1081 images): Disturbed Galaxies
- Class 1 (1853 images): Merging Galaxies
- Class 2 (2645 images): Round Smooth Galaxies
-Class 3 (2027 images): In-between Round Smooth Galaxies
-Class 4 ( 334 images): Cigar Shaped Smooth Galaxies
- Class 5 (2043 images): Barred Spiral Galaxies
- Class 6 (1829 images): Unbarred Tight Spiral Galaxies
-Class 7 (2628 images): Unbarred Loose Spiral Galaxies
- Class 8 (1423 images): Edge-on Galaxies without Bulge
- Class 9 (1873 images): Edge-on Galaxies with Bulge
+* Class 0 (1081 images): Disturbed Galaxies
+* Class 1 (1853 images): Merging Galaxies
+* Class 2 (2645 images): Round Smooth Galaxies
+* Class 3 (2027 images): In-between Round Smooth Galaxies
+* Class 4 ( 334 images): Cigar Shaped Smooth Galaxies
+* Class 5 (2043 images): Barred Spiral Galaxies
+* Class 6 (1829 images): Unbarred Tight Spiral Galaxies
+* Class 7 (2628 images): Unbarred Loose Spiral Galaxies
+* Class 8 (1423 images): Edge-on Galaxies without Bulge
+*  Class 9 (1873 images): Edge-on Galaxies with Bulge
  
  
 
