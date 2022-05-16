@@ -97,7 +97,7 @@ What is our “y” or target variable that we are predicting (classes that we a
 # Galaxy Web Application Button
 As a result, we created an interactive web application button that displays the images and shows below our predicted class of image and the actual class. 
 
-## Please View button with this link:
+## Please view button with this link:
 https://galaxyclassification-347700.uc.r.appspot.com/
 
 Here's whats happening behind the scenes that went in to building the button 
