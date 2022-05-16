@@ -8,16 +8,16 @@
 Galaxy10 DECals is a dataset contains 17736 256x256 pixels colored galaxy images that are seperated into 10 classes based on shape. The 10 classes that equal the  y target variable: 
 Our Y variable (target) All 10 Classes 
 Galaxy10 dataset (17736 images)
-├── Class 0 (1081 images): Disturbed Galaxies
-├── Class 1 (1853 images): Merging Galaxies
-├── Class 2 (2645 images): Round Smooth Galaxies
-├── Class 3 (2027 images): In-between Round Smooth Galaxies
-├── Class 4 ( 334 images): Cigar Shaped Smooth Galaxies
-├── Class 5 (2043 images): Barred Spiral Galaxies
-├── Class 6 (1829 images): Unbarred Tight Spiral Galaxies
-├── Class 7 (2628 images): Unbarred Loose Spiral Galaxies
-├── Class 8 (1423 images): Edge-on Galaxies without Bulge
-└── Class 9 (1873 images): Edge-on Galaxies with Bulge
+* Class 0 (1081 images): Disturbed Galaxies
+* Class 1 (1853 images): Merging Galaxies
+* Class 2 (2645 images): Round Smooth Galaxies
+* Class 3 (2027 images): In-between Round Smooth Galaxies
+*  Class 4 ( 334 images): Cigar Shaped Smooth Galaxies
+*  Class 5 (2043 images): Barred Spiral Galaxies
+*  Class 6 (1829 images): Unbarred Tight Spiral Galaxies
+*  Class 7 (2628 images): Unbarred Loose Spiral Galaxies
+*  Class 8 (1423 images): Edge-on Galaxies without Bulge
+* Class 9 (1873 images): Edge-on Galaxies with Bulge
 Galaxy10 dataset classification labels come from Galaxy Zoo. This is sample of the data below.
 
 ![galaxy10_example](https://user-images.githubusercontent.com/104231685/168537714-2df86fcc-aff1-4198-94dd-55aa9dad14ce.png)
@@ -68,7 +68,7 @@ Do we want the model to make predictions instantly in real-time, or can there be
 We want to make model predictions instantly because with as short as delay as possible because we want the user to be able to click on the web application button and receive a classified image. 
  
 Can all the model training be done on a simple computer, or do we need to leverage additional computational power? 
-The model will be done on a simple computer 
+The model will be done on a simple computer.  
 Our budget constraint is limited to one simple computer. Leveraging google collab as an external computational power to ensure that our simple computer will not crash. 
  
  Do we have any cost / budget limitations / constraints? 
@@ -86,9 +86,34 @@ What is our “y” or target variable that we are predicting (classes that we a
 * Class 6 (1829 images): Unbarred Tight Spiral Galaxies
 * Class 7 (2628 images): Unbarred Loose Spiral Galaxies
 * Class 8 (1423 images): Edge-on Galaxies without Bulge
-*  Class 9 (1873 images): Edge-on Galaxies with Bulge
+* Class 9 (1873 images): Edge-on Galaxies with Bulge
  
  
 
 
 ![galaxypurple](https://user-images.githubusercontent.com/104231685/168538698-6fa71da5-cfa7-434d-8a2c-9002698d56eb.jpg)
+
+
+# Galaxy Web Application Button
+As a result, we created an interactive web application button that displays the images and shows below our predicted class of image and the actual class. 
+
+## Please View button with this link:
+https://galaxyclassification-347700.uc.r.appspot.com/
+
+Here's whats happening behind the scenes that went in to building the button 
+using docker to upload image and build a container deploying to google cloud's registry, app engine
+
+Building application: Button is doing behind the scenes
+
+* 1.) Define images per class: What we want the user experience to be ? How would we define that? 5 images per class so 50 images total --> It will pick 1 image out of 50 to show them from any class
+
+* 2.) Display the image that we picked
+
+* 3.) Now we want to pre-process this image --> so that we can make a prediction
+* 4.) Feed this pre-processed image to our model and get back a prediction *What class the image belongs to ?
+* 5.) Display the prediction
+User's eye
+
+user clicks our button -users see's image that was selected
+user see's the prediction that the model made (class of image)
+Randomly select 50 image where 5 belong to each of the 10 classes : this is through sampling
